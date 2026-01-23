@@ -71,7 +71,7 @@ body {
 .Nav-H {
     grid-column: span 2 / span 2;
     grid-column-start: 4;
-    padding: 10px 20px 0px 0px;
+    padding: 25px 20px 0px 0px;
     align-items: end;
 }
 
@@ -107,6 +107,145 @@ body {
     background-color: #171b23;
     border-radius: 40px;
     margin: 30px 20px 10px 20px;
-
+    outline: 1px solid #2c313a;
 }
      
+.Innhold ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.InnholdGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.InnholdGrid-V {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    display: flex;
+}
+
+.InnholdGrid-V img {
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px;
+    margin: 20px 20px;
+    background-color: #2d303a;
+    border-radius: 25%;
+    outline: 1px solid #2c313a;
+}
+
+.InnholdGrid-V:hover {
+    transform: scale(1.02)
+}
+
+.InnholdGrid-V h2 {
+    color: #f8fafc;
+    font-family: 'Alata', sans-serif;
+    margin: 15px 0px 5px 0px;
+    font-size: 20px;
+}
+
+.InnholdGrid-V p {
+    color: #7588a3;
+    font-family: 'Audiowide', display;
+    font-weight: bold;
+    margin: 0;
+    font-size: 12px;
+}
+
+.InnholdGrid-Midten {
+    grid-column: span 2 / span 2;
+}
+
+.InnholdGrid-H {
+    grid-column-start: 5;
+
+}
+
+.InnholdGrid-List {
+    grid-column: span 5 / span 5;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+
+.SakListe {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 10px 16px 10px;
+}
+
+.sak {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    align-items: center;
+    background-color: #1c2029;
+    padding: 14px 18px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 15px;
+    color: #e6e9ef;
+    outline: 1px solid #2c313a;
+}
+
+.sak-main {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sak-title {
+    font-weight: 600;
+    font-family: 'Audiowide', display;
+    letter-spacing: 0.08rem;
+    text-shadow: 1px;
+}
+
+.sak-sub {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    font-family: 'Alata', sans-serif;
+}
+
+.tag {
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag.screen {
+    background: #243b55;
+    display: flex;
+    align-content: center;
+}
+
+.tag.screen img {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px;
+}
+
+.tag.screen span {
+    align-self: center;
+    color: #0a85ff;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-right: 5px;
+}
+
+.tag.util {
+    background: #2a2f3a;
+    opacity: 0.85;
+    margin: 10px 5px 10px 5px;
+}
+
+.sak-time {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+

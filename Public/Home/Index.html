@@ -8,19 +8,17 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    
-    <div class="Main">
 
+    <div class="Main">
         <div class="Nav-V">
             <div class="Nav-V-Icon-Outline">
                 <img src="..\svg/Screen.svg" alt="">
             </div>
             <div class="Nav-V-Text">
-                <h1 class="text-2xl font-bold text-foreground">IT Support Dashboard</h1>
-                <p class="text-sm text-muted-foreground">Booking og oppsett oversikt</p>
+                <h1 class="text-2xl font-bold text-foreground">Skjermer Venter Oppsett</h1>
+                <p class="text-sm text-muted-foreground">Oversikt over skjermer som ventes oppsett</p>
             </div>
         </div>
-
         <div class="Nav-H">
             <div>
                 <div class="clock">16:20:35</div>
@@ -28,12 +26,26 @@
                 <div class="year">2024</div>
             </div>
         </div>
-
         <div class="Innhold">
-            
-        </div>
+            <div class="InnholdGrid">
+                <div class="InnholdGrid-V">
+                    <img src="..\svg/ScreenSetup.svg" alt="">
+                    <div>
+                        <h2>Skjerm / Kontor Oppsett</h2>
+                        <p>Kø sorteres etter eldst først</p>
+                    </div>
+                </div>
+                <div class="InnholdGrid-Midten">
 
+                </div>
+                <div class="InnholdGrid-H">
+
+                </div>
+                <div class="InnholdGrid-List">
+                    <ul id="sakListe" class="SakListe"></ul>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </body>
 </html>

@@ -19,6 +19,7 @@ body {
     align-items: start;
     width: 100%;
     height: fit-content;
+    min-width: 870px;
 }
     
 .Nav-V {
@@ -29,7 +30,6 @@ body {
     display: flex;
     gap: 20px;
     padding: 25px 0px 0px 20px ;
-    margin-bottom: 20px;
 }
 
 .Nav-V-Icon-Outline {
@@ -111,7 +111,7 @@ body {
     grid-row-start: 2;
     background-color: #171b23;
     border-radius: 40px;
-    margin: 30px 20px 10px 20px;
+    margin: 70px 40px 10px 40px;
     outline: 1px solid #2c313a;
 }
      
@@ -129,11 +129,11 @@ body {
 }
 
 .InnholdGrid-V {
-    grid-column: span 2 / span 2;
+    grid-column: span 3 / span 3;
     grid-column-start: 1;
     display: flex;
     height: fit-content;
-    margin-bottom: 10px;
+    margin: 15px 0px 10px 15px;
 }
 
 .InnholdGrid-V img {
@@ -165,12 +165,6 @@ body {
     font-size: 12px;
 }
 
-.InnholdGrid-Midten {
-    grid-column: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 1;
-}
-
 .InnholdGrid-H {
     grid-column-start: 5;
 }
@@ -195,7 +189,7 @@ body {
     align-items: center;
     background-color: #1c2029;
     padding: 14px 18px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 35px 0px 35px;
     border-radius: 15px;
     color: #e6e9ef;
     outline: 1px solid #2c313a;
@@ -258,7 +252,7 @@ body {
 
 .util p {
     font-family: 'Inter', sans-serif;
-    color: #4c5868;
+    color: #aaadb4;
     font-weight: 400;
     display: flex;
     margin-left: 5px;
@@ -266,6 +260,6 @@ body {
 
 .sak-time {
     font-family: 'Inter', sans-serif;
-    color: #4c5868;
+    color: #aaadb4;
     font-weight: 500;
 }

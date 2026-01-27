@@ -198,20 +198,43 @@ body {
 .sak-main {
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
 
 .sak-title {
+    display: flex;
+    align-items: center;
+}
+
+.sak-title p {
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     letter-spacing: 0.08rem;
     text-shadow: 1px;
+    margin: 5px;
+}
+
+.sak-title img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .sak-sub {
+    display: flex;
+    align-items: center;
+}
+
+.sak-sub img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.sak-sub p {
     font-size: 0.85rem;
     opacity: 0.7;
     font-family: 'Inter', sans-serif;
+    margin: 5px;
 }
 
 .tag {

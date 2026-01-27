@@ -104,8 +104,15 @@ function createRow(line) {
 
     li.innerHTML = `
         <div class="sak-main">
-            <div class="sak-title">#${saknr}</div>
-            <div class="sak-sub">${romnr} • ${type}</div>
+            <div class="sak-title">
+                <img src="../svg/Document.svg">
+                <p>${saknr}</p>
+            </div>
+
+            <div class="sak-sub">
+                <img src="../svg/Placement.svg">
+                <p>${romnr} • ${type}</p>
+            </div>
         </div>
 
         <div class="tag screen">

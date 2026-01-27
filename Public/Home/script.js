@@ -79,6 +79,9 @@ function createRow(line, index) {
     const utstyrMap = ["Ingen tilbehør", "Headset", "Tastatur & Mus", "Headset, Tastatur & Mus"];
     const utstyr = utstyrMap[utstyrnr]; 
 
+    const utstyrSVGMap = ["", "<img src='../svg/Headset.svg'>", "<img src='../svg/Keyboard.svg'> <img src='../svg/Mouse.svg'>", "<img src='../svg/Headset.svg'> <img src='../svg/Keyboard.svg'> <img src='../svg/Mouse.svg'>" ];
+    const utstyrSVG = utstyrSVGMap[utstyrnr];
+
     const formattedSkjerm = skjerm.includes('x')
     ? skjerm.replace('x', '"x')
     : `${skjerm}"`;
@@ -94,10 +97,15 @@ function createRow(line, index) {
         </div>
 
         <div class="tag screen">
-            <img src="../svg/Screen.svg" alt="">
+            <img src="../svg/Screen.svg">
             <span>${formattedSkjerm}</span>
         </div>
-        <span class="tag util">${utstyr}</span>
+        
+        <div class="util">
+            ${utstyrSVG}
+            <p>${utstyr}</p>
+        </div>
+        
         <div id="sak-time" class="sak-time">${dato}, ${tid}</div>
     `;
 

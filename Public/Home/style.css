@@ -1,8 +1,9 @@
-@import url(https://fonts.bunny.net/css?family=alata:400|audiowide:400|azeret-mono:400|monomaniac-one:400|ubuntu-mono:400);
+@import url(https://fonts.bunny.net/css?family=alata:400|audiowide:400|azeret-mono:400|inter:400|monomaniac-one:400|ubuntu-mono:400);
 /* 
 font-family: 'Alata', sans-serif;
 font-family: 'Audiowide', display;
 font-family: 'Azeret Mono', monospace;
+font-family: 'Inter', sans-serif;
 font-family: 'Monomaniac One', sans-serif;
 font-family: 'Ubuntu Mono', monospace;
 */
@@ -14,18 +15,21 @@ body {
 .Main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
-    height: 100%;
+    grid-template-rows: auto;
+    align-items: start;
     width: 100%;
+    height: fit-content;
 }
     
 .Nav-V {
+    height: fit-content;
+    justify-items: start;
+    align-items: start;
     grid-column: span 3 / span 3;
     display: flex;
     gap: 20px;
-    align-items: center;
-    padding: 10px 0px 0px 20px ;
+    padding: 25px 0px 0px 20px ;
+    margin-bottom: 20px;
 }
 
 .Nav-V-Icon-Outline {
@@ -56,14 +60,14 @@ body {
     margin: 5px;
     color: #f8fafc;
     text-shadow: 3px;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Inter', sans-serif;   
 }
 
 .Nav-V-Text p{
     margin: 5px;
     color: #7588a3;
     text-shadow: 1px;
-    font-family: 'Audiowide', display;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
@@ -73,6 +77,7 @@ body {
     grid-column-start: 4;
     padding: 25px 20px 0px 0px;
     align-items: end;
+    height: fit-content;
 }
 
 .Nav-H div{
@@ -88,14 +93,14 @@ body {
 
 .date {
     color: #7588a3;
-    font-family: 'Audiowide', display;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: bold;
 }
 
 .year {
     color: #7588a3;
-    font-family: 'Audiowide', display;
+    font-family: 'Inter', sans-serif;
     font-size: 11px;
     font-weight: bold;
 }
@@ -119,14 +124,16 @@ body {
 .InnholdGrid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    grid-template-rows: auto;
+    align-items: start;
 }
 
 .InnholdGrid-V {
     grid-column: span 2 / span 2;
     grid-column-start: 1;
     display: flex;
+    height: fit-content;
+    margin-bottom: 10px;
 }
 
 .InnholdGrid-V img {
@@ -145,14 +152,14 @@ body {
 
 .InnholdGrid-V h2 {
     color: #f8fafc;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 15px 0px 5px 0px;
     font-size: 20px;
 }
 
 .InnholdGrid-V p {
     color: #7588a3;
-    font-family: 'Audiowide', display;
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
     margin: 0;
     font-size: 12px;
@@ -160,17 +167,19 @@ body {
 
 .InnholdGrid-Midten {
     grid-column: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
 }
 
 .InnholdGrid-H {
     grid-column-start: 5;
-
 }
 
 .InnholdGrid-List {
     grid-column: span 5 / span 5;
     grid-row: span 4 / span 4;
-    grid-row-start: 2;
+    grid-row-start: 2;    
+    margin-bottom: 40px;
 }
 
 .SakListe {
@@ -200,7 +209,7 @@ body {
 
 .sak-title {
     font-weight: 600;
-    font-family: 'Audiowide', display;
+    font-family: 'Inter', sans-serif;
     letter-spacing: 0.08rem;
     text-shadow: 1px;
 }
@@ -208,14 +217,13 @@ body {
 .sak-sub {
     font-size: 0.85rem;
     opacity: 0.7;
-    font-family: 'Alata', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 .tag {
+    font-family: 'Inter', sans-serif;
     padding: 6px 12px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    border-radius: 15px;  
 }
 
 .tag.screen {
@@ -233,19 +241,31 @@ body {
 .tag.screen span {
     align-self: center;
     color: #0a85ff;
-    font-family: 'Ubuntu Mono', monospace;
     margin-right: 5px;
 }
 
-.tag.util {
-    background: #2a2f3a;
-    opacity: 0.85;
-    margin: 10px 5px 10px 5px;
+.util {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0px 20px 0px 20px;
+}
+
+.util img {
+    width: 20px;
+    height: 20px;
+}
+
+.util p {
+    font-family: 'Inter', sans-serif;
+    color: #4c5868;
+    font-weight: 400;
+    display: flex;
+    margin-left: 5px;
 }
 
 .sak-time {
-    font-size: 0.85rem;
-    opacity: 0.6;
+    font-family: 'Inter', sans-serif;
+    color: #4c5868;
+    font-weight: 500;
 }
-
-
